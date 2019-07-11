@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Chatroom Log</h1><hr>
+    <div  style="position:absolute; top:10px; left:70%;">
+      <table border =1>
+        <td style="padding:3px;">
+        <p> User Actions: {{ counter_string }}</p>
+      </td>
+      </table>
+    </div>
+      {% for item in comment_list %}
+      <p>{{ item }} </p>
+      {% endfor %}
+  </body>
+</html>
